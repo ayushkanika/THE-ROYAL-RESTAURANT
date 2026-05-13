@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Royal Restaurant – Menu</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <a href="index.html"><span class="logo-icon">🪔</span> The Royal Restaurant</a>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1>Our Menu</h1>
+      <p>🌿 100% Pure Vegetarian</p>
+    </div>
+  </section>
+
+  <section class="menu-section section">
+    <div class="container">
+
+      <div class="menu-veg-note">
+        <span class="veg-symbol">Pure Veg</span>
+        <p>Every item on our menu is 100% vegetarian.</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-category="all">All</button>
+        <button class="tab-btn" data-category="starters">Starters</button>
+        <button class="tab-btn" data-category="breads">Breads</button>
+        <button class="tab-btn" data-category="mains">Main Course</button>
+        <button class="tab-btn" data-category="rice">Rice &amp; Biryani</button>
+        <button class="tab-btn" data-category="thali">Thali</button>
+        <button class="tab-btn" data-category="desserts">Desserts</button>
+        <button class="tab-btn" data-category="drinks">Drinks</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+
+        <!-- STARTERS -->
+        <div class="menu-item" data-category="starters">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&q=80" alt="Samosa"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Punjabi Samosa (2 pcs)</h3>
+              <span class="price">₹120</span>
+            </div>
+            <p>Crispy pastry filled with spiced potatoes & peas, served with mint chutney</p>
+            <div class="badge-row">
+              <span class="badge veg">🟢 Veg</span>
+              </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="starters">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&q=80" alt="Paneer Tikka"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Paneer Tikka</h3>
+              <span class="price">₹320</span>
+            </div>
+            <p>Marinated cottage cheese cubes grilled in tandoor with bell peppers</p>
+            <div class="badge-row">
+              <span class="badge veg">🟢 Veg</span>
+              <span class="badge popular">Popular</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="starters">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&q=80" alt="Dahi Puri"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Dahi Puri</h3>
+              <span class="price">₹150</span>
+            </div>
+            <p>Crispy puris filled with yogurt, tamarind chutney, sev & spiced potatoes</p>
+            <div class="badge-row">
+              <span class="badge veg">🟢 Veg</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="starters">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=400&q=80" alt="Veg Seekh Kebab"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Veg Seekh Kebab</h3>
+              <span class="price">₹280</span>
+            </div>
+            <p>Minced vegetables & paneer skewers with aromatic spices, grilled in tandoor</p>
+            <div class="badge-row">
+              <span class="badge veg">🟢 Veg</span>
+              <span class="badge chef">Chef's Special</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BREADS -->
+        <div class="menu-item" data-category="breads">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&q=80" alt="Butter Naan"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Butter Naan</h3>
+              <span class="price">₹60</span>
+            </div>
+            <p>Soft leavened bread baked in tandoor, brushed with butter</p>
+            <div class="badge-row"><span class="badge veg">🟢 Veg</span></div>
+          </div>
+        </div>
+
+        
+
+        <div class="menu-item" data-category="breads">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80" alt="Missi Roti"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Missi Roti</h3>
+              <span class="price">₹70</span>
+            </div>
+            <p>Whole wheat & gram flour flatbread with ajwain & spices</p>
+            <div class="badge-row"><span class="badge veg">🟢 Veg</span></div>
+          </div>
+        </div>
+
+        <!-- MAINS -->
+        <div class="menu-item" data-category="mains">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&q=80" alt="Paneer Butter Masala"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Paneer Butter Masala</h3>
+              <span class="price">₹380</span>
+            </div>
+            <p>Cottage cheese in rich tomato-cashew gravy with butter & cream</p>
+            <div class="badge-row"><span class="badge veg">🟢 Veg</span><span class="badge chef">Chef's Special</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="mains">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80" alt="Dal Makhani"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Dal Makhani</h3>
+              <span class="price">₹320</span>
+            </div>
+            <p>Slow-cooked black lentils simmered overnight with butter & cream</p>
+            <div class="badge-row"><span class="badge veg">🟢 Veg</span><span class="badge popular">Most Loved</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="mains">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&q=80" alt="Shahi Paneer"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Shahi Paneer</h3>
+              <span class="price">₹400</span>
+            </div>
+            <p>Royal cottage cheese in a rich Mughlai-style cream & nut gravy</p>
+            <div class="badge-row"><span class="badge veg">🟢 Veg</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="mains">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&q=80" alt="Palak Paneer"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Palak Paneer</h3>
+              <span class="price">₹340</span>
+            </div>
+            <p>Fresh cottage cheese in a smooth, spiced spinach gravy</p>
+            <div class="badge-row"><span class="badge veg">🟢 Veg</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="mains">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&q=80" alt="Rajasthani Gatte ki Sabzi"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Gatte ki Sabzi</h3>
+              <span class="price">₹300</span>
+            </div>
+            <p>Rajasthani gram flour dumplings in a tangy yogurt-based curry</p>
+            <div class="badge-row"><span class="badge veg">🟢 Veg</span></div>
+          </div>
+        </div>
+
+        <!-- RICE & BIRYANI -->
+        <div class="menu-item" data-category="rice">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&q=80" alt="Veg Biryani"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Royal Veg Biryani</h3>
+              <span class="price">₹420</span>
+            </div>
+            <p>Fragrant basmati rice layered with seasonal vegetables, saffron & whole spices</p>
+            <div class="badge-row"><span class="badge veg">🟢 Veg</span><span class="badge chef">Chef's Special</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="rice">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=80" alt="Paneer Biryani"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Paneer Biryani</h3>
+              <span class="price">₹460</span>
+            </div>
+            <p>Marinated paneer with saffron basmati rice & raita</p>
+            <div class="badge-row"><span class="badge veg">🟢 Veg</span><span class="badge popular">Popular</span></div>
+          </div>
+        </div>
+
+        <!-- THALI -->
+        <div class="menu-item" data-category="thali">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80" alt="Rajasthani Thali"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Rajasthani Royal Thali</h3>
+              <span class="price">₹650</span>
+            </div>
+            <p>Dal Baati Churma, Gatte ki Sabzi, Ker Sangri, Bajra Roti, Chaas & Dessert</p>
+            <div class="badge-row"><span class="badge veg">🟢 Veg</span><span class="badge popular">Bestseller</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="thali">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&q=80" alt="North Indian Thali"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>North Indian Thali</h3>
+              <span class="price">₹550</span>
+            </div>
+            <p>Dal Makhani, Paneer Sabzi, Jeera Rice, 2 Rotis, Salad, Pickle & Dessert</p>
+            <div class="badge-row"><span class="badge veg">🟢 Veg</span></div>
+          </div>
+        </div>
+
+        <!-- DESSERTS -->
+        <div class="menu-item" data-category="desserts">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&q=80" alt="Gulab Jamun"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Gulab Jamun (2 pcs)</h3>
+              <span class="price">₹180</span>
+            </div>
+            <p>Soft milk-solid dumplings soaked in rose & cardamom sugar syrup</p>
+            <div class="badge-row"><span class="badge veg">🟢 Veg</span><span class="badge popular">Popular</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="desserts">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&q=80" alt="Rasmalai"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Rasmalai</h3>
+              <span class="price">₹220</span>
+            </div>
+            <p>Soft cottage cheese patties in chilled saffron-cardamom milk with pistachios</p>
+            <div class="badge-row"><span class="badge veg">🟢 Veg</span><span class="badge chef">Chef's Special</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="desserts">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&q=80" alt="Gajar Halwa"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Gajar ka Halwa</h3>
+              <span class="price">₹200</span>
+            </div>
+            <p>Slow-cooked carrot pudding with milk, ghee, sugar & dry fruits</p>
+            <div class="badge-row"><span class="badge veg">🟢 Veg</span></div>
+          </div>
+        </div>
+
+        <!-- DRINKS -->
+        <div class="menu-item" data-category="drinks">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=80" alt="Mango Lassi"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Mango Lassi</h3>
+              <span class="price">₹160</span>
+            </div>
+            <p>Thick yogurt blended with Alphonso mango pulp & a hint of cardamom</p>
+            <div class="badge-row"><span class="badge veg">🟢 Veg</span><span class="badge popular">Popular</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="drinks">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400&q=80" alt="Masala Chaas"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Masala Chaas</h3>
+              <span class="price">₹80</span>
+            </div>
+            <p>Spiced buttermilk with roasted cumin, ginger & fresh coriander</p>
+            <div class="badge-row"><span class="badge veg">🟢 Veg</span></div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="drinks">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&q=80" alt="Rose Sharbat"/>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Rose Sharbat</h3>
+              <span class="price">₹100</span>
+            </div>
+            <p>Chilled rose syrup with basil seeds, lemon & a touch of kewra water</p>
+            <div class="badge-row"><span class="badge veg">🟢 Veg</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>🪔 The Royal Restaurant</h3>
+        <p>Authentic Indian pure vegetarian cuisine crafted with passion since 1998.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fas fa-utensils"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-hours">
+        <h4>Opening Hours</h4>
+        <ul>
+          <li><span>Mon – Thu</span><span>11am – 10pm</span></li>
+          <li><span>Fri – Sat</span><span>11am – 11pm</span></li>
+          <li><span>Sunday</span><span>10am – 10pm</span></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fas fa-map-marker-alt"></i> 45 MG Road, Connaught Place, New Delhi</p>
+        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fas fa-envelope"></i> info@theroyalrestaurant.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 The Royal Restaurant. All rights reserved. &nbsp;|&nbsp; 🌿 100% Pure Vegetarian</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>

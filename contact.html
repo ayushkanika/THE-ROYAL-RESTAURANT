@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Royal Restaurant – Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <a href="index.html"><span class="logo-icon">🪔</span> The Royal Restaurant</a>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1>Contact Us</h1>
+      <p>Hum sunne ke liye hamesha taiyaar hain</p>
+    </div>
+  </section>
+
+  <section class="contact-section section">
+    <div class="container contact-grid">
+
+      <div class="contact-info">
+        <span class="section-tag">Sampark Karein</span>
+        <h2>We're Here for You</h2>
+        <p>Whether you have a question about our menu, want to plan a private event, or just want to say hello — we're always happy to hear from you.</p>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Address</h4>
+              <p>45 MG Road, Connaught Place, New Delhi – 110001</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>info@theroyalrestaurant.com</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Hours</h4>
+              <p>Mon–Thu: 11am–10pm<br/>Fri–Sat: 11am–11pm<br/>Sun: 10am–10pm</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links contact-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Zomato"><i class="fas fa-utensils"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cName">Your Name</label>
+              <input type="text" id="cName" placeholder="Rahul Sharma" required />
+            </div>
+            <div class="form-group">
+              <label for="cEmail">Your Email</label>
+              <input type="email" id="cEmail" placeholder="rahul@example.com" required />
+            </div>
+          </div>
+          <div class="form-group full-width">
+            <label for="cSubject">Subject</label>
+            <input type="text" id="cSubject" placeholder="How can we help?" required />
+          </div>
+          <div class="form-group full-width">
+            <label for="cMessage">Message</label>
+            <textarea id="cMessage" rows="6" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+
+        <div class="success-message" id="contactSuccess">
+          <i class="fas fa-check-circle"></i>
+          <h3>Message Sent! 🙏</h3>
+          <p>Dhanyavaad for reaching out. We'll get back to you within 24 hours.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="map-section">
+    <div class="map-placeholder">
+      <div class="map-overlay-content">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>45 MG Road, Connaught Place, New Delhi – 110001</h3>
+        <p>Located in the heart of New Delhi, easily accessible by Metro (Rajiv Chowk Station).</p>
+        <a href="https://maps.google.com" target="_blank" class="btn btn-primary">
+          <i class="fas fa-directions"></i> Get Directions
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>🪔 The Royal Restaurant</h3>
+        <p>Authentic Indian pure vegetarian cuisine crafted with passion since 1998.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fas fa-utensils"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-hours">
+        <h4>Opening Hours</h4>
+        <ul>
+          <li><span>Mon – Thu</span><span>11am – 10pm</span></li>
+          <li><span>Fri – Sat</span><span>11am – 11pm</span></li>
+          <li><span>Sunday</span><span>10am – 10pm</span></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fas fa-map-marker-alt"></i> 45 MG Road, Connaught Place, New Delhi</p>
+        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fas fa-envelope"></i> info@theroyalrestaurant.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 The Royal Restaurant. All rights reserved. &nbsp;|&nbsp; 🌿 100% Pure Vegetarian</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Royal Restaurant – Reservation</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/reservation.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <a href="index.html"><span class="logo-icon">🪔</span> The Royal Restaurant</a>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="reservation.html" class="active">Reservation</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1>Book a Table</h1>
+      <p>Reserve your royal dining experience</p>
+    </div>
+  </section>
+
+  <section class="reservation-section section">
+    <div class="container reservation-grid">
+
+      <div class="reservation-form-wrap">
+        <span class="section-tag">Table Reservation</span>
+        <h2>Reserve Your Table</h2>
+        <p>Fill in the details below and we'll confirm your booking within a few hours.</p>
+
+        <form class="reservation-form" id="reservationForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName"><i class="fas fa-user"></i> First Name</label>
+              <input type="text" id="firstName" placeholder="Rahul" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName"><i class="fas fa-user"></i> Last Name</label>
+              <input type="text" id="lastName" placeholder="Sharma" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email"><i class="fas fa-envelope"></i> Email</label>
+              <input type="email" id="email" placeholder="rahul@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone"><i class="fas fa-phone"></i> Phone</label>
+              <input type="tel" id="phone" placeholder="+91 98765 43210" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date"><i class="fas fa-calendar"></i> Date</label>
+              <input type="date" id="date" required />
+            </div>
+            <div class="form-group">
+              <label for="time"><i class="fas fa-clock"></i> Time</label>
+              <select id="time" required>
+                <option value="">Select Time</option>
+                <option>11:00 AM</option>
+                <option>11:30 AM</option>
+                <option>12:00 PM</option>
+                <option>12:30 PM</option>
+                <option>1:00 PM</option>
+                <option>1:30 PM</option>
+                <option>7:00 PM</option>
+                <option>7:30 PM</option>
+                <option>8:00 PM</option>
+                <option>8:30 PM</option>
+                <option>9:00 PM</option>
+                <option>9:30 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="guests"><i class="fas fa-users"></i> Number of Guests</label>
+              <select id="guests" required>
+                <option value="">Select Guests</option>
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+                <option>5 Guests</option>
+                <option>6 Guests</option>
+                <option>7+ Guests (call us)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="occasion"><i class="fas fa-gift"></i> Occasion (Optional)</label>
+              <select id="occasion">
+                <option value="">Select Occasion</option>
+                <option>Birthday</option>
+                <option>Anniversary</option>
+                <option>Kitty Party</option>
+                <option>Business Lunch / Dinner</option>
+                <option>Family Get-Together</option>
+                <option>Pooja / Religious Function</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group full-width">
+            <label for="dietary"><i class="fas fa-leaf"></i> Dietary Preference</label>
+            <select id="dietary">
+              <option value="">Select Preference</option>
+              <option>Regular Vegetarian</option>
+              <option>Jain (No Onion, No Garlic)</option>
+              <option>Satvik (No Onion, No Garlic, No Root Vegetables)</option>
+            </select>
+          </div>
+          <div class="form-group full-width">
+            <label for="requests"><i class="fas fa-comment"></i> Special Requests</label>
+            <textarea id="requests" rows="4" placeholder="Seating preferences, allergies, special arrangements..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-calendar-check"></i> Confirm Reservation
+          </button>
+        </form>
+
+        <div class="success-message" id="successMessage">
+          <i class="fas fa-check-circle"></i>
+          <h3>Reservation Confirmed! 🙏</h3>
+          <p>Dhanyavaad! We've received your reservation and will send a confirmation to your email shortly. We look forward to serving you.</p>
+          <a href="index.html" class="btn btn-primary">Back to Home</a>
+        </div>
+      </div>
+
+      <div class="reservation-info">
+        <div class="info-card">
+          <i class="fas fa-clock"></i>
+          <h3>Opening Hours</h3>
+          <ul>
+            <li><span>Mon – Thu</span><span>11am – 10pm</span></li>
+            <li><span>Fri – Sat</span><span>11am – 11pm</span></li>
+            <li><span>Sunday</span><span>10am – 10pm</span></li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Location</h3>
+          <p>45 MG Road, Connaught Place<br/>New Delhi – 110001</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-phone"></i>
+          <h3>Call Us</h3>
+          <p>+91 98765 43210</p>
+          <p class="small">For groups of 7+, please call directly.</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-leaf"></i>
+          <h3>Dietary Note</h3>
+          <p>We are 100% Pure Vegetarian. Jain & Satvik options are available on request. Please mention your preference while booking.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>🪔 The Royal Restaurant</h3>
+        <p>Authentic Indian pure vegetarian cuisine crafted with passion since 1998.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fas fa-utensils"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-hours">
+        <h4>Opening Hours</h4>
+        <ul>
+          <li><span>Mon – Thu</span><span>11am – 10pm</span></li>
+          <li><span>Fri – Sat</span><span>11am – 11pm</span></li>
+          <li><span>Sunday</span><span>10am – 10pm</span></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fas fa-map-marker-alt"></i> 45 MG Road, Connaught Place, New Delhi</p>
+        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fas fa-envelope"></i> info@theroyalrestaurant.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 The Royal Restaurant. All rights reserved. &nbsp;|&nbsp; 🌿 100% Pure Vegetarian</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/reservation.js"></script>
+</body>
+</html>
